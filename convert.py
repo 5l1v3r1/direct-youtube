@@ -38,7 +38,6 @@ def close_connection(exception):
 
 @app.route('/', methods=['GET'])
 def index():
-    return 'Hello world!'
     song = escape(request.args['s'])
 
     conn = get_db()
